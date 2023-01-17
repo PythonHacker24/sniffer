@@ -117,8 +117,8 @@ def while_arp_spoof():
         else:                                     # else if the user haven't specified any interval value, we will use the default value in this program
             time.sleep(2)                         # Send Packets at 2 seconds interval by default
 
-        interface = options.interface
-        sniff(interface)
+        #interface = options.interface            # Update on the program. Sniff function will be called later. No need to call it here.
+        #sniff(interface)
 
 
 print("[+] Enabling IP Forwarding ..... ")    # Starting to enabiling IP Forwarding
